@@ -1,0 +1,226 @@
+:root {
+    /*theme colors*/
+    --text-color: #FEFEFA;
+    --main-color: #1A1A1A;
+    --hover-color:  #C5C5FD;
+}
+
+/*------------------------navbar----------------*/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-black {
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    height: auto;
+}
+
+nav {
+    padding: 0;
+    background: var(--main-color);
+    position: relative;
+    justify-content: space-between;
+    height: 0rem;
+    min-height: 11vh;
+    overflow-y: hidden;
+    transition: height 1s cubic-bezier(0.26,-0.01,0, 1.01);
+    border-bottom: 1px solid #f3f3f3;
+}
+
+nav .nav-brand a{
+    display: block;
+    padding: 1rem;
+    font-family: var(--lexend);
+    font-size: 1.6rem;
+}
+
+nav .nav-items {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-family: var(--livvic);
+    font-size: 1.1rem;
+}
+
+nav .nav-items .nav-link:hover{
+    background: var(--main-color);
+}
+
+nav .nav-items .nav-link:hover a {
+    color: var(--hover-color);
+}
+
+nav .social {
+    padding: 1.3rem;
+}
+
+nav .social i {
+    padding: 0.2rem;
+}
+
+nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+@media only screen and (max-width: 800px) {
+    nav .nav-items {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column !important;
+        display: block !important;
+    }
+    nav.toggle-collapse {
+        display: initial;
+    }
+    nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-style: italic;
+    margin: 0;
+    padding-left: 5.4rem;
+    margin-top: 8px;
+}
+
+image {
+    width: 100%;
+}
+
+.hero {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero_text {
+    color: var(--text-color);
+    display: flex;
+    flex: 0 1 40vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-text h2 {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_image {
+    background-image: url(assets/img/game-light-4696540_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 500ms ease;
+    margin-left: 10rem;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+.arrow_icon {
+   align-items: center;
+   padding-left: 38.3rem;
+   padding-top: 1.3rem;
+   color: white;
+   font-size: 25px;
+}
+
+.middle_section {
+    background-color: var(--main-color);
+    max-width: 1300px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    
+}
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--text-color);
+}
